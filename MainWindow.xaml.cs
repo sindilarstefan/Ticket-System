@@ -18,6 +18,9 @@ namespace ATM_Tiketing
 {
     public partial class MainWindow : Window
     {
+        IntroduInBD insert = new IntroduInBD();
+        BazaDate bd = BazaDate.GetInstance();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -29,6 +32,12 @@ namespace ATM_Tiketing
         }
         private void ContNouButton_Click(object sender, RoutedEventArgs e)
         {
+            //insert.insereazaUtilizator("Ionescooo", "Alex", "mail@mail.com", "0723456667", "1234");
+            if (insert.verificaUtilizator("popescuion@example.com", "parola123") == true)
+                Console.WriteLine("EXISTA");
+            else
+                Console.WriteLine("NU ex");
+
             mainFrame.Content = null;
             SignUP signupPage = new SignUP();
             signupPage.BackNavigationService = mainFrame.NavigationService;

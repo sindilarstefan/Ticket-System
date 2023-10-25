@@ -43,7 +43,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Windows.Controls.DataVisualization.Toolkit" />
-	<Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -56,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BazaDate.cs" />
+    <Compile Include="IntroduInBD.cs" />
     <Compile Include="PagPrincipala.xaml.cs">
       <DependentUpon>PagPrincipala.xaml</DependentUpon>
     </Compile>
